@@ -7,7 +7,6 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import BookCard from "@/components/BookCard";
 import DecorativeBlobs from "@/components/DecorativeBlobs";
-import SnapScrollContainer from "@/components/SnapScrollContainer";
 import SnapSection from "@/components/SnapSection";
 import { toast } from "sonner";
 
@@ -91,19 +90,17 @@ const Index = () => {
       <Header books={books} onBookClick={handleBookClick} />
       
       {/* Unified snap-scroll section for Hero, Interactive, and About */}
-      <SnapScrollContainer>
-        <SnapSection id="hero-section" index={0}>
-          <Hero />
-        </SnapSection>
-        
-        <SnapSection index={1}>
-          <InteractiveFeature onDiscoverClick={scrollToStories} />
-        </SnapSection>
-        
-        <SnapSection index={2}>
-          <AboutUs />
-        </SnapSection>
-      </SnapScrollContainer>
+      <SnapSection id="hero-section" index={0}>
+        <Hero />
+      </SnapSection>
+      
+      <SnapSection index={1}>
+        <InteractiveFeature onDiscoverClick={scrollToStories} />
+      </SnapSection>
+      
+      <SnapSection index={2}>
+        <AboutUs />
+      </SnapSection>
       
       <section id="stories-section" className="relative py-12 px-4 overflow-hidden">
         {/* Subtle blobs for the story section */}
