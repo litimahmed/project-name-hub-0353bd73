@@ -122,17 +122,15 @@ All colors MUST be HSL.
   }
 }
 
-/* Snap scroll container */
-.snap-container {
+/* Professional snap scroll on main scrollbar */
+html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  overflow-y: scroll;
-  height: 100vh;
 }
 
 .snap-section {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
+  scroll-snap-stop: normal;
   min-height: 100vh;
 }
 
