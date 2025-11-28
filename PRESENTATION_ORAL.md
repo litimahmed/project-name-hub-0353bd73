@@ -10,7 +10,15 @@ Voici la page d'accueil. Vous remarquez immédiatement les couleurs vives et joy
 
 ---
 
-Ici vous voyez les 6 histoires disponibles. J'ai limité à 6 choix pour respecter la capacité de la mémoire à court terme qui peut retenir 5 à 9 éléments maximum. Chaque carte affiche une image de couverture colorée, le titre, la durée de lecture et une courte description. Les cartes ont un effet de survol pour le guidage visuel - l'utilisateur sait qu'elles sont cliquables. Vous remarquez que "Captain Earth Saves the Day" est mise en avant avec un badge "Recommandé Demo" - c'est l'histoire que nous allons explorer ensemble.
+En descendant, nous arrivons à la section interactive. Cette section présente une image attrayante d'un enfant en interaction avec l'application, accompagnée d'un texte explicatif sur les fonctionnalités clés: des histoires interactives, des quiz éducatifs, et un suivi des progrès. Le bouton "Découvrir les Histoires" utilise le principe d'affordance - sa forme et sa couleur indiquent clairement qu'il est cliquable. C'est un point de transition important qui guide l'enfant vers le contenu principal. L'animation en fondu lors du défilement crée une expérience fluide et professionnelle.
+
+---
+
+Ensuite, nous avons la section "À Propos de Nous" qui explique la mission du projet. Cette section utilise des visuels chaleureux et un langage simple pour communiquer l'objectif éducatif: apprendre le recyclage en s'amusant. Les icônes et le texte sont organisés de manière claire et espacée pour faciliter la lecture et la compréhension. Cette section établit la crédibilité du projet et rassure les parents sur la valeur éducative de l'application. Le contraste de couleurs respecte les principes d'accessibilité tout en restant attrayant pour les enfants.
+
+---
+
+Maintenant, nous arrivons aux 6 histoires disponibles. J'ai limité à 6 choix pour respecter la capacité de la mémoire à court terme qui peut retenir 5 à 9 éléments maximum. Chaque carte affiche une image de couverture colorée, le titre, la durée de lecture et une courte description. Les cartes ont un effet de survol pour le guidage visuel - l'utilisateur sait qu'elles sont cliquables. Vous remarquez que "Captain Earth Saves the Day" est mise en avant avec un badge "Recommandé Demo" - c'est l'histoire que nous allons explorer ensemble.
 
 ---
 
