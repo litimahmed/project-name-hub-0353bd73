@@ -134,6 +134,12 @@ html {
   min-height: 100vh;
 }
 
+/* Stories section needs to expand beyond viewport */
+#stories-section {
+  min-height: auto;
+  scroll-snap-align: none;
+}
+
 /* Story page flip styles */
 .stf__parent {
   margin: auto !important;
