@@ -124,7 +124,7 @@ All colors MUST be HSL.
 
 /* Professional snap scroll on main scrollbar */
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 
@@ -137,7 +137,7 @@ html {
 /* Stories section needs to expand beyond viewport */
 #stories-section {
   min-height: auto;
-  scroll-snap-align: none;
+  scroll-snap-align: start;
 }
 
 /* Story page flip styles */
