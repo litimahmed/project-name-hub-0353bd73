@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -20,6 +20,9 @@ import bookGardenMagic from "@/assets/book-garden-new.jpg";
 import bookForestGuardians from "@/assets/book-forest-new.jpg";
 
 const Index = () => {
+  const [currentSection, setCurrentSection] = useState(0);
+  const sections = ['hero-section', 'interactive-section', 'about-section', 'stories-section'];
+
   const books = [
     {
       id: 1,
@@ -87,6 +90,52 @@ const Index = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Keyboard navigation with arrow keys
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const nextSection = Math.min(currentSection + 1, sections.length - 1);
+        if (nextSection !== currentSection) {
+          setCurrentSection(nextSection);
+          const element = document.getElementById(sections[nextSection]);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prevSection = Math.max(currentSection - 1, 0);
+        if (prevSection !== currentSection) {
+          setCurrentSection(prevSection);
+          const element = document.getElementById(sections[prevSection]);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentSection, sections]);
+
+  // Track current section on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      
+      sections.forEach((sectionId, index) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setCurrentSection(index);
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [sections]);
+
   return (
     <div className="min-h-screen bg-background">
       <Header books={books} onBookClick={handleBookClick} />
@@ -96,11 +145,11 @@ const Index = () => {
         <Hero />
       </SnapSection>
       
-      <SnapSection index={1}>
+      <SnapSection id="interactive-section" index={1}>
         <InteractiveFeature onDiscoverClick={scrollToStories} />
       </SnapSection>
       
-      <SnapSection index={2}>
+      <SnapSection id="about-section" index={2}>
         <AboutUs />
       </SnapSection>
       
