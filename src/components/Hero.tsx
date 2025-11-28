@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-eco-adventure.jpg";
 import DecorativeBlobs from "@/components/DecorativeBlobs";
@@ -65,7 +64,6 @@ const Hero = () => {
                   className="bg-eco-green hover:bg-eco-green/90 text-white font-semibold text-lg px-10 py-6 rounded-xl shadow-sm hover:shadow-md transition-all"
                   onClick={scrollToStories}
                 >
-                  <BookOpen className="mr-2 h-5 w-5" />
                   Read a Story
                 </Button>
               </motion.div>

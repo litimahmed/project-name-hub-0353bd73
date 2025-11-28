@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, BookOpen, Heart } from "lucide-react";
+import { Sparkles, Heart } from "lucide-react";
 import { motion } from "framer-motion";
 import interactiveImage from "@/assets/interactive-storybook.jpg";
 
@@ -107,8 +107,8 @@ const InteractiveFeature = ({ onDiscoverClick }: InteractiveFeatureProps) => {
             {/* Feature list */}
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex items-start gap-3 p-4 rounded-xl bg-background border border-border hover:border-eco-green/50 transition-colors">
-                <div className="w-10 h-10 rounded-lg bg-eco-green/10 flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="w-5 h-5 text-eco-green" />
+                <div className="w-10 h-10 rounded-lg bg-eco-green/10 flex items-center justify-center flex-shrink-0 text-2xl">
+                  📚
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">6+ Stories</h3>
@@ -143,7 +143,6 @@ const InteractiveFeature = ({ onDiscoverClick }: InteractiveFeatureProps) => {
                   size="lg"
                   className="bg-gradient-to-r from-eco-green to-eco-blue hover:from-eco-green/90 hover:to-eco-blue/90 text-white font-bold text-lg px-10 py-7 rounded-2xl shadow-lg hover:shadow-xl transition-all group"
                 >
-                  <BookOpen className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
                   Explore All Stories
                 </Button>
               </motion.div>
