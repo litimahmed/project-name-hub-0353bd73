@@ -13,10 +13,10 @@ import { toast } from "sonner";
 // Import book cover images
 import bookEarthGuardian from "@/assets/book-earth-guardian.jpg";
 import bookEarthHero from "@/assets/book-earth-hero.jpg";
-import bookJungleRecycling from "@/assets/book-jungle-recycling.jpg";
-import bookOceanRescue from "@/assets/book-ocean-rescue.jpg";
-import bookGardenMagic from "@/assets/book-garden-magic.jpg";
-import bookForestGuardians from "@/assets/book-forest-guardians.jpg";
+import bookJungleRecycling from "@/assets/book-jungle-new.jpg";
+import bookOceanRescue from "@/assets/book-ocean-new.jpg";
+import bookGardenMagic from "@/assets/book-garden-new.jpg";
+import bookForestGuardians from "@/assets/book-forest-new.jpg";
 
 const Index = () => {
   const books = [
