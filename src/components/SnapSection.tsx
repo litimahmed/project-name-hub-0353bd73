@@ -11,48 +11,48 @@ const SnapSection = ({ children, id, index }: SnapSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { 
     once: false, 
-    amount: 0.5,
-    margin: "-20% 0px -20% 0px"
+    amount: 0.3,
+    margin: "-10% 0px -10% 0px"
   });
 
   // Different playful animation patterns for each section
   const getAnimationVariant = (): Variants => {
     const variantsList: Variants[] = [
       {
-        hidden: { opacity: 0, y: 60, scale: 0.95 },
+        hidden: { opacity: 0, y: 80, scale: 0.95 },
         visible: { 
           opacity: 1, 
           y: 0, 
           scale: 1,
           transition: {
-            duration: 0.8,
-            ease: "easeInOut",
+            duration: 1,
+            ease: [0.25, 0.1, 0.25, 1],
             staggerChildren: 0.1
           }
         }
       },
       {
-        hidden: { opacity: 0, x: -40, rotate: -2 },
+        hidden: { opacity: 0, x: -60, rotate: -2 },
         visible: { 
           opacity: 1, 
           x: 0, 
           rotate: 0,
           transition: {
-            duration: 0.9,
-            ease: "anticipate",
+            duration: 1.1,
+            ease: [0.25, 0.1, 0.25, 1],
             staggerChildren: 0.15
           }
         }
       },
       {
-        hidden: { opacity: 0, scale: 0.9, y: 40 },
+        hidden: { opacity: 0, scale: 0.85, y: 50 },
         visible: { 
           opacity: 1, 
           scale: 1, 
           y: 0,
           transition: {
-            duration: 0.7,
-            ease: "easeOut",
+            duration: 0.9,
+            ease: [0.25, 0.1, 0.25, 1],
             staggerChildren: 0.12
           }
         }
