@@ -128,7 +128,7 @@ const Hero = () => {
           >
             <img 
               src={heroImage} 
-              alt="Eco Heroes - Happy cartoon characters learning about recycling" 
+              alt="Verdant - Happy cartoon characters learning about recycling" 
               className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover"
             />
           </motion.div>

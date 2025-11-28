@@ -1,4 +1,4 @@
-import { BookOpen, Heart, Mail, ExternalLink } from "lucide-react";
+import { Heart, Mail, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,10 +11,9 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-eco-green to-eco-blue flex items-center justify-center">
-                <BookOpen className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-foreground">Eco Heroes</span>
+              <span className="text-3xl font-logo bg-gradient-to-r from-eco-green via-eco-blue to-eco-green bg-clip-text text-transparent font-bold tracking-wide">
+                Verdant
+              </span>
             </div>
             <p className="text-sm text-muted-foreground">
               Teaching kids to love and protect our planet, one story at a time.
@@ -95,10 +94,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            © 2024 Eco Heroes Story Library. All rights reserved.
+            © 2024 Verdant Story Library. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 fill-red-500 text-red-500" /> for our little Eco Heroes
+            Made with <Heart className="w-4 h-4 fill-red-500 text-red-500" /> for young explorers
           </p>
         </div>
       </div>

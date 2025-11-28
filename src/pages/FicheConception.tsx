@@ -133,10 +133,9 @@ const FicheConception = () => {
             Interface de sensibilisation à la gestion des déchets pour enfants
           </p>
           <div className="flex items-center justify-center gap-2 mt-4">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-eco-green to-eco-blue flex items-center justify-center">
-              <BookOpen className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-2xl font-bold text-foreground">Eco Heroes</span>
+            <span className="text-4xl font-logo bg-gradient-to-r from-eco-green via-eco-blue to-eco-green bg-clip-text text-transparent font-bold tracking-wide">
+              Verdant
+            </span>
           </div>
         </div>
 
@@ -418,7 +417,7 @@ const FicheConception = () => {
                       Police arrondie et amicale, parfaite pour les contenus destinés aux enfants.
                     </p>
                     <div className="p-3 bg-muted/50 rounded font-story">
-                      <p className="text-2xl mb-1">Eco Heroes</p>
+                      <p className="text-2xl mb-1">Verdant Stories</p>
                       <p className="text-lg">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
                       <p className="text-lg">abcdefghijklmnopqrstuvwxyz</p>
                       <p className="text-lg">0123456789</p>
