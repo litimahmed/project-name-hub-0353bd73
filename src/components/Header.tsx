@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BookOpen, Menu, X, Search, FileText } from "lucide-react";
+import { Menu, X, Search, FileText } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -35,9 +35,6 @@ const Header = ({ books, onBookClick }: HeaderProps) => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero-section')}>
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-eco-green to-eco-blue flex items-center justify-center">
-              <BookOpen className="w-6 h-6 text-white" />
-            </div>
             <span className="text-xl font-bold text-foreground">Eco Heroes</span>
           </div>
 
@@ -54,12 +51,6 @@ const Header = ({ books, onBookClick }: HeaderProps) => {
               className="text-muted-foreground hover:text-foreground transition-colors font-medium"
             >
               About Us
-            </button>
-            <button
-              onClick={() => scrollToSection('contact-section')}
-              className="text-muted-foreground hover:text-foreground transition-colors font-medium"
-            >
-              Contact Us
             </button>
             <button
               onClick={() => navigate('/conception')}
@@ -122,12 +113,6 @@ const Header = ({ books, onBookClick }: HeaderProps) => {
               className="block w-full text-left px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-md transition-colors font-medium"
             >
               About Us
-            </button>
-            <button
-              onClick={() => scrollToSection('contact-section')}
-              className="block w-full text-left px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-md transition-colors font-medium"
-            >
-              Contact Us
             </button>
             <button
               onClick={() => {

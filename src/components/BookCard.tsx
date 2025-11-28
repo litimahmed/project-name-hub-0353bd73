@@ -89,7 +89,6 @@ const BookCard = ({
         {/* Action Buttons */}
         <div className="flex gap-3 pt-2">
         <Button className={cn("flex-1 font-semibold", featured ? "bg-gradient-to-r from-eco-green to-eco-green/80 hover:from-eco-green/90 hover:to-eco-green text-white shadow-lg shadow-eco-green/30" : "bg-eco-green hover:bg-eco-green/90 text-white")} onClick={onClick}>
-            <BookOpen className="w-4 h-4 mr-2" />
             {featured ? "Commencer la lecture" : "Read the story"}
           </Button>
           <Button variant="outline" className="px-4" onClick={e => {
