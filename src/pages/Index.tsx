@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import InteractiveFeature from "@/components/InteractiveFeature";
@@ -103,14 +104,21 @@ const Index = () => {
         <AboutUs />
       </SnapSection>
       
-      <SnapSection id="stories-section" index={3}>
-        <section className="relative py-8 px-4 overflow-hidden flex flex-col justify-start">
+      {/* Stories section - not wrapped in SnapSection to avoid empty scroll space */}
+      <motion.div
+        id="stories-section"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
+      >
+        <section className="relative py-16 px-4 overflow-hidden">
           {/* Subtle blobs for the story section */}
           <div className="absolute top-10 left-1/4 w-72 h-72 bg-eco-orange/15 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-eco-purple/15 rounded-full blur-3xl pointer-events-none" />
           
           <div className="container mx-auto max-w-7xl relative z-10">
-            <div className="text-center mb-8">
+            <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
                 Choose Your Story
               </h2>
@@ -136,7 +144,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-      </SnapSection>
+      </motion.div>
       
       <Footer />
     </div>
