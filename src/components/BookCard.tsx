@@ -111,11 +111,11 @@ const BookCard = ({ title, image, color, readingTime, category, description, onC
         
         {/* Action Buttons */}
         <div className="flex gap-3 pt-2">
-          <Button 
+        <Button 
             className={cn(
               "flex-1 font-semibold",
               featured 
-                ? "bg-gradient-to-r from-eco-green to-eco-green/80 hover:from-eco-green/90 hover:to-eco-green text-white shadow-lg shadow-eco-green/30 animate-pulse hover:animate-none"
+                ? "bg-gradient-to-r from-eco-green to-eco-green/80 hover:from-eco-green/90 hover:to-eco-green text-white shadow-lg shadow-eco-green/30"
                 : "bg-eco-green hover:bg-eco-green/90 text-white"
             )}
             onClick={onClick}
