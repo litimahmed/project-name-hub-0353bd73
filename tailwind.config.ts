@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'story': ['Fredoka', 'Comic Sans MS', 'cursive'],
+        'logo': ['Righteous', 'Fredoka', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",

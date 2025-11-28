@@ -39,7 +39,7 @@ const Index = () => {
       image: bookEarthHero,
       color: "eco-green",
       readingTime: "Reading 4 min.",
-      category: "Eco heroes",
+      category: "Environmental heroes",
       description: "Meet Captain Earth, the superhero who protects our planet! Learn how small actions like recycling and saving water can make you an Earth hero too!",
       featured: true,
     },

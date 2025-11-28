@@ -1,12 +1,12 @@
-# Présentation Orale - Eco Heroes
+# Présentation Orale - Verdant
 
 ---
 
-Bonjour Madame Kennich, je vais vous présenter Eco Heroes, une application web éducative destinée aux enfants de 5 à 12 ans. L'objectif est simple: sensibiliser les enfants au tri des déchets et au recyclage à travers des histoires interactives et ludiques. J'ai choisi ce format car les enfants apprennent mieux par le jeu et les histoires.
+Bonjour Madame Kennich, je vais vous présenter Verdant, une application web éducative destinée aux enfants de 5 à 12 ans. L'objectif est simple: sensibiliser les enfants au tri des déchets et au recyclage à travers des histoires interactives et ludiques. J'ai choisi ce format car les enfants apprennent mieux par le jeu et les histoires.
 
 ---
 
-Voici la page d'accueil. Vous remarquez immédiatement les couleurs vives et joyeuses - c'est un choix ergonomique délibéré pour attirer l'attention des enfants tout en respectant leur flexibilité cognitive. Le titre "Eco Heroes" et le slogan invitent l'enfant à devenir un héros de l'environnement. Les animations douces gardent l'attention sans surcharger la mémoire à court terme de l'enfant.
+Voici la page d'accueil. Vous remarquez immédiatement les couleurs vives et joyeuses - c'est un choix ergonomique délibéré pour attirer l'attention des enfants tout en respectant leur flexibilité cognitive. Le nom "Verdant" avec sa belle typographie de style conte et le slogan invitent l'enfant à devenir un héros de l'environnement. Les animations douces gardent l'attention sans surcharger la mémoire à court terme de l'enfant.
 
 ---
 
@@ -42,7 +42,7 @@ Ensuite, il y a un quiz interactif qui teste la compréhension de l'enfant. Les 
 
 ---
 
-Pour résumer, Eco Heroes applique plusieurs principes ergonomiques: l'utilisabilité avec une interface facile à apprendre et satisfaisante, le guidage et l'observabilité pour que l'utilisateur sache toujours où il est, la cohérence et la familiarité avec un design uniforme, la flexibilité adaptée au public cible des enfants de 5 à 12 ans, la robustesse avec un feedback positif, et une charge cognitive limitée avec maximum 6 histoires. Le projet utilise React, TypeScript et Tailwind CSS. Merci pour votre attention, avez-vous des questions?
+Pour résumer, Verdant applique plusieurs principes ergonomiques: l'utilisabilité avec une interface facile à apprendre et satisfaisante, le guidage et l'observabilité pour que l'utilisateur sache toujours où il est, la cohérence et la familiarité avec un design uniforme, la flexibilité adaptée au public cible des enfants de 5 à 12 ans, la robustesse avec un feedback positif, et une charge cognitive limitée avec maximum 6 histoires. Le projet utilise React, TypeScript et Tailwind CSS. Merci pour votre attention, avez-vous des questions?
 
 ---
 
