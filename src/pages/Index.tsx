@@ -37,6 +37,7 @@ const Index = () => {
       readingTime: "Reading 4 min.",
       category: "Eco heroes",
       description: "Meet Captain Earth, the superhero who protects our planet! Learn how small actions like recycling and saving water can make you an Earth hero too!",
+      featured: true,
     },
     {
       id: 3,
@@ -129,6 +130,7 @@ const Index = () => {
                   category={book.category}
                   description={book.description}
                   onClick={() => handleBookClick(book.id)}
+                  featured={'featured' in book ? book.featured : false}
                 />
               ))}
             </div>
