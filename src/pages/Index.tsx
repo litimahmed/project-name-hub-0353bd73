@@ -105,46 +105,45 @@ const Index = () => {
       </SnapSection>
       
       {/* Stories section - not wrapped in SnapSection to avoid empty scroll space */}
-      <motion.div
+      <motion.section
         id="stories-section"
+        className="relative py-16 px-4 overflow-hidden"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
       >
-        <section className="relative py-16 px-4 overflow-hidden">
-          {/* Subtle blobs for the story section */}
-          <div className="absolute top-10 left-1/4 w-72 h-72 bg-eco-orange/15 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-eco-purple/15 rounded-full blur-3xl pointer-events-none" />
-          
-          <div className="container mx-auto max-w-7xl relative z-10">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-                Choose Your Story
-              </h2>
-              <p className="text-muted-foreground text-lg">
-                Click on any book to start your recycling adventure!
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-8">
-              {books.map((book) => (
-                <BookCard
-                  key={book.id}
-                  title={book.title}
-                  image={book.image}
-                  color={book.color}
-                  readingTime={book.readingTime}
-                  category={book.category}
-                  description={book.description}
-                  onClick={() => handleBookClick(book.id)}
-                  featured={'featured' in book ? book.featured : false}
-                />
-              ))}
-            </div>
+        {/* Subtle blobs for the story section */}
+        <div className="absolute top-10 left-1/4 w-72 h-72 bg-eco-orange/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-eco-purple/15 rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
+              Choose Your Story
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Click on any book to start your recycling adventure!
+            </p>
           </div>
-        </section>
-      </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-8">
+            {books.map((book) => (
+              <BookCard
+                key={book.id}
+                title={book.title}
+                image={book.image}
+                color={book.color}
+                readingTime={book.readingTime}
+                category={book.category}
+                description={book.description}
+                onClick={() => handleBookClick(book.id)}
+                featured={'featured' in book ? book.featured : false}
+              />
+            ))}
+          </div>
+        </div>
+      </motion.section>
       
       <Footer />
     </div>
