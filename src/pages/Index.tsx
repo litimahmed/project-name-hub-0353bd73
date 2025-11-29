@@ -171,9 +171,15 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
               Choose Your Story
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-lg mb-4">
               Click on any book to start your recycling adventure!
             </p>
+            <Button 
+              onClick={() => navigate('/stories')} 
+              className="bg-eco-green hover:bg-eco-green/90 text-white"
+            >
+              View All 14 Stories →
+            </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-8">
